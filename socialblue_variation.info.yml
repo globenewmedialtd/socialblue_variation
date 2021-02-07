@@ -1,0 +1,127 @@
+name: Social Blue Variation theme
+description: A subtheme of Demo theme for Open social installations.
+screenshot: screenshot.png
+type: theme
+
+base theme: socialblue
+
+core: 8.x
+
+libraries:
+  - socialblue_variation/brand
+  - socialblue_variation/site-footer
+  - socialblue_variation/global-styling
+
+libraries-extend:
+  socialblue/base:
+    - socialblue_variation/base
+  socialblue/alert:
+    - socialblue_variation/alert
+  socialblue/badge:
+    - socialblue_variation/badge
+  socialblue/button:
+    - socialblue_variation/button
+  socialblue/cards:
+    - socialblue_variation/cards
+  socialblue/form-controls:
+    - socialblue_variation/form-controls
+  socialblue/list:
+    - socialblue_variation/list
+  socialblue/spinner:
+    - socialblue_variation/spinner
+  # Extend molecules
+  socialblue/block--informblock:
+    - socialblue_variation/block--informblock
+  socialblue/breadcrumb:
+    - socialblue_variation/breadcrumb
+  socialblue/dropdown:
+    - socialblue_variation/dropdown
+  socialblue/file:
+      - socialblue_variation/file
+  socialblue/form-elements:
+    - socialblue_variation/form-elements
+  socialblue/form--input-groups:
+    - socialblue_variation/form--input-groups
+  socialblue/like:
+    - socialblue_variation/like
+  # attach the datepicker stylesheet to all date fields
+  core/drupal.date:
+    - socialblue_variation/form--datepicker
+  # extend the core datepicker with a stylesheet
+  core/jquery.ui.datepicker:
+    - socialblue_variation/form--timepicker
+  socialblue/form--password:
+    - socialblue_variation/form--password
+  socialblue/pagination:
+    - socialblue_variation/pagination
+  socialblue/popover:
+    - socialblue_variation/popover
+  socialblue/nav-book:
+    - socialblue_variation/nav-book
+  socialblue/nav-tabs:
+    - socialblue_variation/nav-tabs
+  socialblue/navbar:
+    - socialblue_variation/navbar
+  socialblue/select2:
+    - socialblue_variation/select2
+  socialblue/teaser:
+    - socialblue_variation/teaser
+  socialblue/tour:
+    - socialblue_variation/tour
+  # Extend Organisms
+  socialblue/comment:
+    - socialblue_variation/comment
+  socialblue/hero:
+    - socialblue_variation/hero
+  socialblue/message:
+    - socialblue_variation/message
+  socialblue/meta:
+    - socialblue_variation/meta
+  socialblue/modal:
+    - socialblue_variation/modal
+  socialblue/offcanvas:
+    - socialblue_variation/offcanvas
+  socialblue/stream:
+    - socialblue_variation/stream
+  socialblue/page-node:
+    - socialblue_variation/page-node
+  socialblue/layout:
+    - socialblue_variation/layout
+
+ckeditor_stylesheets:
+  - assets/css/ckeditor.css
+
+# This section is used by the contrib module, Component Libraries. It allows you
+# to reference .twig files in your components/ directory.
+component-libraries:
+  base:
+    paths:
+      - components/01-base
+  atoms:
+    paths:
+      - components/02-atoms
+  molecules:
+    paths:
+      - components/03-molecules
+  organisms:
+    paths:
+      - components/04-organisms
+  templates:
+    paths:
+      - components/05-templates
+
+regions:
+  hidden: Hidden
+  header: Header
+  breadcrumb: Breadcrumb
+  hero: Hero
+  secondary_navigation: Secondary navigation
+  content_top: Content top
+  title: Page title
+  content: Content
+  complementary_top: Complementary top
+  complementary_bottom: Complementary bottom
+  content_bottom: Content bottom
+  sidebar_first: Sidebar First
+  sidebar_second: Sidebar Second
+  footer: Footer
